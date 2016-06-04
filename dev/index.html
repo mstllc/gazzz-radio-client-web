@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>GazzzRadio</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/application.css">
+  </head>
+  <body>
+
+    <div class="sidebar">
+      <img class="logo" src="/assets/images/gazz.png" alt="Gazz696">
+      <h2 class="ital">GazzzRadio</h2>
+
+      <hr>
+
+      <div class="track-info">
+        <p></p>
+      </div>
+
+      <div class="controls">
+        <a href="#" class="play-pause play" onclick="return false;"></a>
+        <a href="#" class="skip" onclick="return false;"></a>
+      </div>
+    </div>
+
+    <div id="mixer" class="wrapper loading">
+      <div class="inner-wrapper loading">
+        <div class="loader">Loading...</div>
+      </div>
+    </div>
+
+    <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <script src="/javascripts/application.js"></script>
+  </body>
+</html>
