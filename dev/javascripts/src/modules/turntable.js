@@ -26,7 +26,8 @@ export default class Turntable {
         enablejsapi: 1,
         modestbranding: 1,
         rel: 0,
-        showinfo: 0
+        showinfo: 0,
+        playsinline: 1
       },
       events: {
         'onReady': $.proxy(this._onPlayerReady, this),
